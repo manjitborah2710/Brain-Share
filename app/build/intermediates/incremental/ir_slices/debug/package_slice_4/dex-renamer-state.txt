@@ -1,0 +1,4 @@
+#Sun Mar 03 00:19:02 IST 2019
+base.0=E\:\\apps\\BrainShare\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex
