@@ -1,8 +1,10 @@
 package com.borah.manjit.brainshare;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class GameOver extends AppCompatActivity {
@@ -20,6 +22,12 @@ public class GameOver extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        startActivity(new Intent(this,FirstActivity.class));
+    }
+
+    public void goToStart(View view){
+        MediaPlayer mediaPlayer= MediaPlayer.create(this,R.raw.click_sound);
+        mediaPlayer.start();
         startActivity(new Intent(this,FirstActivity.class));
     }
 }

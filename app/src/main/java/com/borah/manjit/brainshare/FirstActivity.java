@@ -2,9 +2,12 @@ package com.borah.manjit.brainshare;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.nfc.cardemulation.HostApduService;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +33,6 @@ import java.util.ArrayList;
 
 public class FirstActivity extends AppCompatActivity {
 
-    View splash;
     View mainV;
 
     TextView tv_app_name;
@@ -39,8 +41,6 @@ public class FirstActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     ArrayList<String> list;
     ListView lv;
-
-    Animation animation;
     int count;
 
 
@@ -48,17 +48,17 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        final CustomProgressDialog dialog=new CustomProgressDialog(this,"Loading....");
+        dialog.setCancelable(false);
+
+        dialog.show();
+
+
+
         count=0;
-
-        splash=getLayoutInflater().inflate(R.layout.activity_first,null);
-        ImageView  im=splash.findViewById(R.id.start_screen_logo);
-        tv_app_name=splash.findViewById(R.id.app_name_tv);
-
-        animation=AnimationUtils.loadAnimation(getApplicationContext(),android.R.anim.fade_in);
-        animation.setDuration(5000);
-
-        im.setAnimation(animation);
-        setContentView(splash);
+        mainV=getLayoutInflater().inflate(R.layout.first_activity_main_layout,null);
+        setContentView(mainV);
+        lv=mainV.findViewById(R.id.list_of_games);
 
         list=new ArrayList<String>();
 
@@ -74,19 +74,18 @@ public class FirstActivity extends AppCompatActivity {
                 }
                 adapter=new CustomAdapter(getApplicationContext(),list);
 
-                mainV=getLayoutInflater().inflate(R.layout.first_activity_main_layout,null);
-                animation.setDuration(4000);
-                mainV.setAnimation(animation);
-                lv=mainV.findViewById(R.id.list_of_games);
                 lv.setAdapter(adapter);
                 lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         String s= (String) lv.getItemAtPosition(position);
+                        MediaPlayer mediaPlayer= MediaPlayer.create(FirstActivity.this,R.raw.click_sound);
+                        mediaPlayer.start();
                         startActivity(new Intent(FirstActivity.this,MainActivity.class).putExtra("game",s));
                     }
                 });
-                setContentView(mainV);
+
+                dialog.cancel();
 
             }
 
@@ -101,10 +100,14 @@ public class FirstActivity extends AppCompatActivity {
     public void onBackPressed() {
         count++;
         if(count>1){
-            finish();
+            finishAffinity();
         }
-        else{
-            Toast.makeText(this,"press one more time to exit",Toast.LENGTH_LONG).show();
-        }
+        Toast.makeText(this,"press one more time to exit",Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                count=0;
+            }
+        },2000);
     }
 }

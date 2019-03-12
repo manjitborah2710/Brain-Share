@@ -25,24 +25,33 @@
         android:debuggable="true"
         android:icon="@mipmap/brain"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/brain"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.borah.manjit.brainshare.MainActivity"
-            android:parentActivityName="com.borah.manjit.brainshare.FirstActivity" />
-        <activity
-            android:name="com.borah.manjit.brainshare.GameOver"
-            android:parentActivityName="com.borah.manjit.brainshare.MainActivity" />
-        <activity
-            android:name="com.borah.manjit.brainshare.FirstActivity"
-            android:theme="@style/FirstActivityTheme" >
+            android:name="com.borah.manjit.brainshare.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.borah.manjit.brainshare.MainActivity"
+            android:parentActivityName="com.borah.manjit.brainshare.FirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.borah.manjit.brainshare.GameOver"
+            android:parentActivityName="com.borah.manjit.brainshare.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.borah.manjit.brainshare.FirstActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FirstActivityTheme" >
         </activity>
 
         <service android:name="com.google.firebase.components.ComponentDiscoveryService" >

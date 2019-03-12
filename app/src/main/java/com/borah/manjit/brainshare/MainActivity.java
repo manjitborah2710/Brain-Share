@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         game=getIntent().getExtras().getString("game").toLowerCase();
         startGame();
 
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
 
     }
@@ -218,7 +218,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.next:{
                 if(!stopIncr){
                     fillQuestion(questions);
-                    Toast.makeText(getApplicationContext(),"next pressed",Toast.LENGTH_SHORT).show();
                 }
                 break;
             }
