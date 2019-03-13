@@ -1216,6 +1216,10 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\anim_letters_translation.xml.flat",
+        "source": "E:\\apps\\BrainShare\\app\\src\\main\\res\\anim\\letters_translation.xml"
+    },
+    {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\4a7c75e7402a40a9f89f389c9fddfa13\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },

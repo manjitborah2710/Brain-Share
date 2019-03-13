@@ -12,6 +12,7 @@ anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
 anim brain_translate
+anim letters_translation
 anim play_btn_translation
 attr actionBarDivider
 attr actionBarItemBackground

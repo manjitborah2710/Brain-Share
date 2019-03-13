@@ -11,7 +11,8 @@ int anim abc_slide_out_top 0x7f010009
 int anim abc_tooltip_enter 0x7f01000a
 int anim abc_tooltip_exit 0x7f01000b
 int anim brain_translate 0x7f01000c
-int anim play_btn_translation 0x7f01000d
+int anim letters_translation 0x7f01000d
+int anim play_btn_translation 0x7f01000e
 int attr actionBarDivider 0x7f020000
 int attr actionBarItemBackground 0x7f020001
 int attr actionBarPopupTheme 0x7f020002

@@ -5,35 +5,33 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.2.0"
-    timestamp="1552423206596"
+    timestamp="1552465109788"
     token="5887937560145729629"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="172" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="34" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
     <artifact
-        location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1552423184752"
+        timestamp="1552465045424"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
         <artifact
             location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
@@ -48,6 +46,9 @@
             type="SPLIT" />
         <artifact
             location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -73,10 +74,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1552423206596"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1552465109788"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
     </build>
 

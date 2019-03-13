@@ -22,7 +22,8 @@ public final class R {
     public static final int abc_tooltip_enter=0x7f01000a;
     public static final int abc_tooltip_exit=0x7f01000b;
     public static final int brain_translate=0x7f01000c;
-    public static final int play_btn_translation=0x7f01000d;
+    public static final int letters_translation=0x7f01000d;
+    public static final int play_btn_translation=0x7f01000e;
   }
   public static final class attr {
     /**
