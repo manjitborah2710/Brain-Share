@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10sp"
-    android:background="@color/colorPrimary">
+    android:animateLayoutChanges="true"
+    android:background="@color/colorPrimary"
+    android:padding="10sp">
 
     <ListView
         android:id="@+id/list_of_games"
         android:layout_width="match_parent"
-        android:layout_height="444dp"
+        android:layout_height="464dp"
         android:layout_marginTop="8dp"
         android:divider="@color/yellow"
         android:dividerHeight="2sp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
@@ -30,11 +30,65 @@
         android:gravity="center"
         android:text="Available Topics"
         android:textAlignment="center"
+        android:textColor="@color/yellow"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/yellow"
-        android:textStyle="bold"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/log_out_btn_first_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/right_side_rounded"
+        android:padding="5sp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/bgcolor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/create_your_own_quiz_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_of_games"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/create_your_own_quiz_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_side_rounded"
+        android:padding="5sp"
+        android:text="Create Your own quiz"
+        android:textAllCaps="false"
+        android:textColor="@color/bgcolor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_of_games"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <Button
+        android:id="@+id/delete_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/right_side_rounded"
+        android:padding="5sp"
+        android:text="Delete my account"
+        android:textAllCaps="false"
+        android:textColor="@color/bgcolor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_out_btn_first_activity" />
 </android.support.constraint.ConstraintLayout>

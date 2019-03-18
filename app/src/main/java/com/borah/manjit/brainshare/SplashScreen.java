@@ -15,6 +15,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.borah.manjit.brainshare.dialoginterfaces.ShowErrorOnNetworkUnavailability;
+
 import java.util.List;
 
 public class SplashScreen extends AppCompatActivity implements View.OnClickListener {
@@ -30,7 +32,7 @@ public class SplashScreen extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_splash_screen);
         btn_play_quiz=findViewById(R.id.play_quiz_btn);
         btn_play_quiz.setOnClickListener(this);
-        intent=new Intent(SplashScreen.this,FirstActivity.class);
+        intent=new Intent(SplashScreen.this,LogInAndOthers.class);
 
         iv_brain=findViewById(R.id.iv_brain);
         Animation animation= AnimationUtils.loadAnimation(this,R.anim.brain_translate);
@@ -61,35 +63,18 @@ public class SplashScreen extends AppCompatActivity implements View.OnClickListe
             val=val+200;
         }
 
-
-
-
-//        Animation animationForLetters=AnimationUtils.loadAnimation(this,R.anim.letters_translation);
-//        animationForLetters.setDuration(2000);
-//        letters[0].startAnimation(animationForLetters);
-//        Animation animationForLetters2=AnimationUtils.loadAnimation(this,R.anim.letters_translation);
-//        animationForLetters2.setDuration(2500);
-//        letters[1].startAnimation(animationForLetters2);
-//        Animation animationForLetters3=AnimationUtils.loadAnimation(this,R.anim.letters_translation);
-//        animationForLetters3.setDuration(3000);
-//        letters[2].startAnimation(animationForLetters3);
-
-
-
-
-
-
     }
 
     @Override
     public void onClick(View v){
         switch (v.getId()){
             case R.id.play_quiz_btn:{
-
-                MediaPlayer mediaPlayer= MediaPlayer.create(this,R.raw.click_sound);
-                mediaPlayer.start();
-                startActivity(intent);
-                break;
+                if(!(new ShowErrorOnNetworkUnavailability()).showDialog(this)){
+                    MediaPlayer mediaPlayer= MediaPlayer.create(this,R.raw.click_sound);
+                    mediaPlayer.start();
+                    startActivity(intent);
+                    break;
+                }
             }
             default:{
                 break;

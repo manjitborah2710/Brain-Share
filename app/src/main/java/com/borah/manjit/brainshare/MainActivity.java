@@ -231,4 +231,9 @@ public class MainActivity extends AppCompatActivity {
         item.setEnabled(enableNext);
         return true;
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(MainActivity.this,FirstActivity.class));
+    }
 }

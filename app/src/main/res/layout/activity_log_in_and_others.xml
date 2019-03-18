@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInAndOthers"
+    android:background="@drawable/bg_secondary"
+    android:animateLayoutChanges="true">
+
+    <Button
+        android:textColor="@color/bgcolor"
+        android:textStyle="bold"
+        android:background="@color/yellow"
+        android:id="@+id/log_in_btn"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="displayDialog"/>
+
+    <Button
+        android:textColor="@color/bgcolor"
+        android:textStyle="bold"
+        android:background="@color/yellow"
+        android:id="@+id/sign_up_btn"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_in_btn"
+        android:onClick="displayDialog"/>
+
+    <Button
+        android:textColor="@color/bgcolor"
+        android:textStyle="bold"
+        android:background="@color/yellow"
+        android:id="@+id/skip"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Skip"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="displayDialog"/>
+</android.support.constraint.ConstraintLayout>
