@@ -25,9 +25,9 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_add_topic"
         android:layout_width="match_parent"
-        android:layout_height="564dp"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/add_qn_btn_add_topic"
         app:layout_constraintTop_toBottomOf="@+id/topic_et_add_topic"
         tools:layout_editor_absoluteX="16dp"></android.support.v7.widget.RecyclerView>

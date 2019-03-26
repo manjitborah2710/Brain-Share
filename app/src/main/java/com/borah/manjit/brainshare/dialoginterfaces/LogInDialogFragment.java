@@ -45,8 +45,14 @@ public class LogInDialogFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 if(!(email.getText().toString().equals("") || pwd.getText().toString().equals(""))){
-                    onClickLogIn.logIn(email.getText().toString(),pwd.getText().toString());
                     getDialog().dismiss();
+                    try{
+                        onClickLogIn.logIn(email.getText().toString(),pwd.getText().toString());
+                    }
+                    catch (Exception e){
+                        Log.d("mn",e.getStackTrace()+"\n"+e.getLocalizedMessage());
+                    }
+
                 }
             }
         });
@@ -79,10 +85,6 @@ public class LogInDialogFragment extends DialogFragment {
         public void logIn(String email,String pwd);
         public void resetPassword(String email);
     }
-
-
-
-
 
 
     @Override

@@ -6,10 +6,12 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.borah.manjit.brainshare.R;
 
@@ -41,9 +43,18 @@ public class SignUpDialogFragment extends DialogFragment {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!(email.getText().toString().equals("") || pwd.getText().toString().equals("") || cpwd.getText().toString().equals(""))){
-                    onClickSignUp.signUp(email.getText().toString(),pwd.getText().toString());
+                if(!(email.getText().toString().equals("") || email.getText().toString().contains(" ") || pwd.getText().toString().equals("") || cpwd.getText().toString().equals("") || !(pwd.getText().toString().equals(cpwd.getText().toString())))){
                     getDialog().dismiss();
+                    try{
+                        onClickSignUp.signUp(email.getText().toString(),pwd.getText().toString());
+                    }
+                    catch (Exception e){
+                        Log.d("mn",e.getStackTrace()+"\n"+e.getLocalizedMessage());
+                    }
+
+                }
+                else{
+                    Toast.makeText(getActivity(),"Either email is wrongly formatted or passwords do not match",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -63,7 +74,7 @@ public class SignUpDialogFragment extends DialogFragment {
             onClickSignUp=(OnClickSignUp) context;
         }
         catch (ClassCastException e){
-            e.printStackTrace();
+            Log.d("mn",e.getStackTrace()+"\n"+e.getLocalizedMessage());
         }
     }
 

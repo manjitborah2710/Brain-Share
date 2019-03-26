@@ -834,7 +834,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable info
 drawable left_side_rounded
-drawable logo
 drawable my_games_qns_rv_view_background
 drawable navigation_empty_icon
 drawable next
