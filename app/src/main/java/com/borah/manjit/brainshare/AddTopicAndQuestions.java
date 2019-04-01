@@ -134,7 +134,7 @@ public class AddTopicAndQuestions extends AppCompatActivity implements View.OnCl
             dbRef.child("users").child(user.getUid()).child("games").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    if(dataSnapshot.hasChild(topicname.toLowerCase().replace(" ","")+user_email.toLowerCase().replace(".com",""))){
+                    if(dataSnapshot.hasChild(topicname.toLowerCase().replace(" ","")+user_email.toLowerCase().replace(".","+"))){
                         successful=false;
                         Toast.makeText(getApplicationContext(),"Topic already exists",Toast.LENGTH_SHORT).show();
                     }
@@ -175,7 +175,7 @@ public class AddTopicAndQuestions extends AppCompatActivity implements View.OnCl
             return;
         }
 
-        dbRef.child("users").child(user.getUid()).child("games").child(topicname.toLowerCase().replace(" ","")+user_email.toLowerCase().replace(".com","")).setValue(topicname).addOnFailureListener(new OnFailureListener() {
+        dbRef.child("users").child(user.getUid()).child("games").child(topicname.toLowerCase().replace(" ","")+user_email.toLowerCase().replace(".","+")).setValue(topicname).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 successful=false;
@@ -190,7 +190,7 @@ public class AddTopicAndQuestions extends AppCompatActivity implements View.OnCl
         }
 
 
-        dbRef.child("gamenames").child(topicname.toLowerCase().replace(" ","")+user_email.toLowerCase().replace(".com","")).setValue(topicname+"-"+user_email.replace(".com","")).addOnFailureListener(new OnFailureListener() {
+        dbRef.child("gamenames").child(topicname.toLowerCase().replace(" ","")+user_email.toLowerCase().replace(".","+")).setValue(topicname+"-"+user_email.replace(".","+")).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 successful=false;
@@ -209,7 +209,7 @@ public class AddTopicAndQuestions extends AppCompatActivity implements View.OnCl
 
         for(int i=0;i<questions.size();i++){
             successful=true;
-            dbRef.child("games").child(topicname.toLowerCase()+"-"+user_email.toLowerCase().replace(".com","")).child("qn"+(i+1)).setValue(questions.get(i)).addOnFailureListener(new OnFailureListener() {
+            dbRef.child("games").child(topicname.toLowerCase()+"-"+user_email.toLowerCase().replace(".","+")).child("qn"+(i+1)).setValue(questions.get(i)).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     successful=false;
@@ -229,7 +229,7 @@ public class AddTopicAndQuestions extends AppCompatActivity implements View.OnCl
 
     private void deletePrevData(final DatabaseReference dbRef, final String topic, final String email) {
 
-        dbRef.child("games").child(topic.toLowerCase()+"-"+email.toLowerCase().replace(".com","")).removeValue();
+        dbRef.child("games").child(topic.toLowerCase()+"-"+email.toLowerCase().replace(".","+")).removeValue();
 
     }
 

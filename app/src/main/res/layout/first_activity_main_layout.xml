@@ -63,17 +63,19 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/left_side_rounded"
         android:padding="5sp"
         android:text="Create Your own quiz"
         android:textAllCaps="false"
         android:textColor="@color/bgcolor"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/delete_account_btn"
+        app:layout_constraintBottom_toTopOf="@+id/user_email_display_tv_first_actvitiy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/log_out_btn_first_activity"
-        app:layout_constraintTop_toBottomOf="@+id/list_of_games" />
+        app:layout_constraintTop_toBottomOf="@+id/list_of_games"
+        app:layout_constraintVertical_bias="0.269" />
 
     <Button
         android:id="@+id/delete_account_btn"
@@ -81,8 +83,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:background="@drawable/right_side_rounded"
         android:padding="5sp"
         android:text="Delete my account"
@@ -90,7 +90,23 @@
         android:textColor="@color/bgcolor"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/user_email_display_tv_first_actvitiy"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="user : mba@gmail.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/delete_account_btn" />
 </android.support.constraint.ConstraintLayout>

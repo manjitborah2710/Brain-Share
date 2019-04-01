@@ -3,31 +3,21 @@ package com.borah.manjit.brainshare;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.media.MediaPlayer;
-import android.nfc.cardemulation.HostApduService;
-import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.borah.manjit.brainshare.dialoginterfaces.ShowErrorOnNetworkUnavailability;
+import com.borah.manjit.brainshare.dialoginterfaces.ShowReportDialog;
 import com.borah.manjit.brainshare.global.GlobalData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -60,7 +50,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
     String user_email;
     String user_email_stripped;
     FirebaseAuth auth;
-
+    TextView displayUserEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +76,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         createQuiz.setOnClickListener(this);
         deleteAcc=findViewById(R.id.delete_account_btn);
         deleteAcc.setOnClickListener(this);
+        displayUserEmail=findViewById(R.id.user_email_display_tv_first_actvitiy);
         del_from_gamenames=new ArrayList<>();
         del_from_games=new ArrayList<>();
 
@@ -121,6 +112,19 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
                         }
                     }
                 });
+
+                lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                    @Override
+                    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                        if (!showErrorOnNetworkUnavailability.showDialog(context)) {
+                            String s = (String) lv.getItemAtPosition(position);
+                            ShowReportDialog reportDialog=new ShowReportDialog(context,s);
+                            reportDialog.show();
+                        }
+                        return true;
+                    }
+                });
+
 
                 dialog.cancel();
 
@@ -279,8 +283,11 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
             logout.setVisibility(View.VISIBLE);
             createQuiz.setVisibility(View.VISIBLE);
             deleteAcc.setVisibility(View.VISIBLE);
+
             user_email=user.getEmail();
-            user_email_stripped=user_email.replace(".com","");
+            displayUserEmail.setText(user_email);
+            displayUserEmail.setVisibility(View.VISIBLE);
+            user_email_stripped=user_email.replace(".","+");
         }
 
         ((GlobalData)getApplication()).setAuthToken(auth);

@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.2.0"
-    timestamp="1553617778083"
+    timestamp="1554109106502"
     token="5887937560145729629"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -23,45 +23,49 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+
     <build
         build-mode="FULL"
-        timestamp="1553617362437"
+        timestamp="1554109063433"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
             location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="E:\apps\BrainShare\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -69,15 +73,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1553617725804"
+        timestamp="1554109106502"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="E:\apps\BrainShare\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="E:\apps\BrainShare\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1553617778083"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

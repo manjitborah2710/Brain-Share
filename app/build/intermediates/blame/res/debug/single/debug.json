@@ -60,16 +60,16 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "E:\\apps\\BrainShare\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "E:\\apps\\BrainShare\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -84,12 +84,12 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\61447ea9a076e835c35c3b6d6b26f730\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
-    },
-    {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\61447ea9a076e835c35c3b6d6b26f730\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -100,16 +100,16 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\4a7c75e7402a40a9f89f389c9fddfa13\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\color\\abc_btn_colored_text_material.xml"
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\4a7c75e7402a40a9f89f389c9fddfa13\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -152,20 +152,20 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\61447ea9a076e835c35c3b6d6b26f730\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
-    },
-    {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\de4ec160b4ca084c9554fc41c3cd03e8\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\61447ea9a076e835c35c3b6d6b26f730\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\61447ea9a076e835c35c3b6d6b26f730\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -204,12 +204,12 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\anim\\abc_fade_in.xml"
-    },
-    {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_disabled.xml.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\61447ea9a076e835c35c3b6d6b26f730\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_brainshare_0002_s.png.flat",
@@ -260,12 +260,12 @@
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_default_mtrl_shape.xml.flat",
-        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_default_mtrl_shape.xml.flat",
+        "source": "C:\\Users\\ManjiT\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\553b13f56604764ead4a670ecc1462ca\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "E:\\apps\\BrainShare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",

@@ -6,10 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ContextMenu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -90,8 +88,8 @@ public class MyGames extends AppCompatActivity implements View.OnClickListener{
             customProgressDialog.show();
             String games_key, gamenames_key;
             s = true;
-            games_key = games.get(position).toLowerCase() + "-" + user_email.toLowerCase().replace(".com", "");
-            gamenames_key = games.get(position).toLowerCase().replace(" ", "") + user_email.toLowerCase().replace(".com", "");
+            games_key = games.get(position).toLowerCase() + "-" + user_email.toLowerCase().replace(".", "+");
+            gamenames_key = games.get(position).toLowerCase().replace(" ", "") + user_email.toLowerCase().replace(".", "+");
             dbRef.child("games").child(games_key).removeValue().addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {

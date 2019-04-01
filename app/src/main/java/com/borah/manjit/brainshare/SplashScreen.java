@@ -2,13 +2,8 @@ package com.borah.manjit.brainshare;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Parcel;
-import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -16,8 +11,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.borah.manjit.brainshare.dialoginterfaces.ShowErrorOnNetworkUnavailability;
-
-import java.util.List;
 
 public class SplashScreen extends AppCompatActivity implements View.OnClickListener {
     Button btn_play_quiz;

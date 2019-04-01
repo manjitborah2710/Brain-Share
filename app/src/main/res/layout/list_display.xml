@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/yellow"
         android:id="@+id/list_text"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
 
 </LinearLayout>

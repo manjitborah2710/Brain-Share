@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -213,6 +214,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.inst:{
+                showAboutMe();
                 break;
             }
             case R.id.next:{
@@ -235,5 +237,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         startActivity(new Intent(MainActivity.this,FirstActivity.class));
+    }
+
+    public void showAboutMe(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle("About me");
+        String msg="Name : Manjit Borah\n"+
+                "Email : manjit.development@gmail.com\n";
+        builder.setMessage(msg);
+        builder.create().show();
     }
 }
